@@ -6,24 +6,53 @@
 }
 header {
   font-size: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
+div {
+    background: grey;
+}
+h1, h2, h3 {
+  padding: 0px;
+  text-align: right;
+  background-color: #00FFFF;
+  position: static;
+  top: 0px;
+  right: 0px;
+  margin: 0px;
+  font-size: 1.5em;
+  border: 1px solid black;
+
+  }
+  p {
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: black;
+  text-align: left;
+}
+
 
 .row {
   width: 100%;
   background-color: green;
+
 }
 /********** Desktop view **********/
 @media (min-width: 992px) {
   .col-lg-3, .col-lg-4 {
     float: left;
-    border: 1px solid green;
+    border: 2px solid black;
+    padding: 5px;
+    margin:1.5%;
+
   }
  .col-lg-3 {
-    width: 25%;
+    width: 24%;
   }
   .col-lg-4 {
-    width: 33.33%;
+    width: 30.33%;
   }
   }
 
@@ -31,21 +60,26 @@ header {
 @media (max-width: 991px) {
   .col-md-6, .col-md-12 {
     float: left;
-    border: 1px solid green;
+    border: 2px solid black;
+    padding: 5px;
+    margin:1%;
   }
   .col-md-6 {
-    width: 50%;
+    width: 48%;
   }
  
   .col-md-12 {
     width: 100%;
+    margin-right: 2%;
   }
 }
 /********** Mobile devices **********/
 @media (max-width: 767px) {
    .col-sd-12 {
     float: left;
-    border: 1px solid green;
+    border: 2px solid black;
     width: 100%;
+    padding: 5px;
+    margin:1%;
   }
 }
